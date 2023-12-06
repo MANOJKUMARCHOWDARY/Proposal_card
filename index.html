@@ -82,6 +82,24 @@
 
         /* Additional or Overriding Styles */
     </style>
+    <script>
+function preloadImages() {
+    var imageSources = [
+        "img.png",
+        "mainbg.jpg",
+        // Add more image URLs to preload here
+    ];
+
+    var images = [];
+    for (var i = 0; i < imageSources.length; i++) {
+        var img = new Image();
+        img.src = imageSources[i];
+        images.push(img);
+    }
+    return images;
+}
+
+    </script>
 </head>
 
 <body onload="preloadImages()">
