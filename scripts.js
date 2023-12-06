@@ -25,6 +25,7 @@ var love = setInterval(function(){
       else if(txt1.charAt(i)=='|')
         {
           $(".bg_heart").css("background-image","url('img.png')");
+            $(".bg_heart").css("background-size", "auto");
   
         }
       else
