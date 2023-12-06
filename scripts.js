@@ -1,3 +1,16 @@
+        function preloadImages() {
+            var imageSources = [
+                "img.png",
+                "mainbg.jpg",
+                // Add more image URLs to preload here
+            ];
+
+            for (var i = 0; i < imageSources.length; i++) {
+                var img = new Image();
+                img.src = imageSources[i];
+            }
+        }
+
 
 var love = setInterval(function(){
     var r_num = Math.floor(Math.random() * 40) + 1;
